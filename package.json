@@ -4,8 +4,18 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js",
+    "test": "mocha test --recursive --exit",
+    "db:test:create": "dropdb --if-exists tarot_test; createdb tarot_test",
+    "db:test:setup": "psql tarot_test < src/data/schema.sql; psql tarot_test < src/data/seed.sql"
   },
   "author": "Celeste De Santiago",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "pg-promise": "^8.4.4"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1"
+  }
 }

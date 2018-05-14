@@ -1,0 +1,24 @@
+INSERT INTO decks VALUES ('animal');
+
+INSERT INTO cards (name, deck_name, image_url) VALUES ('The Hanged Man', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078611/tarot/animal/the_hanged_man.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('Death', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078610/tarot/animal/death.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('Judgement', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078610/tarot/animal/judgement.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('Justice', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078610/tarot/animal/justice.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('Strength', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078610/tarot/animal/strength.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('Temperance', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078610/tarot/animal/temperance.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('The Chariot', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078610/tarot/animal/the_chariot.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('The Devil', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078610/tarot/animal/the_devil.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('The Emperor', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078610/tarot/animal/the_emperor.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('The Empress', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078611/tarot/animal/the_empress.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('The Fool', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078611/tarot/animal/the_fool.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('The Hermit', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078611/tarot/animal/the_hermit.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('The Hierophant', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078611/tarot/animal/the_hierophant.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('The High Priestess', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078611/tarot/animal/the_high_priestess.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('The Lovers', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078611/tarot/animal/the_lovers.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('The Magician', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078611/tarot/animal/the_magician.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('The Moon', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078611/tarot/animal/the_moon.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('The Star', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078611/tarot/animal/the_star.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('The Sun', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078612/tarot/animal/the_sun.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('The Tower', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078612/tarot/animal/the_tower.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('The World', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078613/tarot/animal/the_world.png');
+INSERT INTO cards (name, deck_name, image_url) VALUES ('Wheel of Fortune', 'animal', 'http://res.cloudinary.com/dqw9accra/image/upload/v1526078612/tarot/animal/wheel_of_fortune.png');

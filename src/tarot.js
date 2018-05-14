@@ -2,6 +2,7 @@ const basicDeck = [
   'The Fool',
   'The Magician',
   'The High Priestess',
+  'The Empress',
   'The Emperor',
   'The Hierophant',
   'The Lovers',
@@ -84,8 +85,9 @@ const basicDeck = [
  * @return {array}     an array of random cards
  */
 function dealHand(num, deck=basicDeck) {
-  if (num < 1) return []
-  if (num > deck.length) throw new Error('You\'re asking for too many cards!')
+  if (isNaN(num)) throw new Error('That\'s not a number.')
+  if (num < 0) throw new Error('I can\'t deal a negative number of cards, silly!')
+  if (num > deck.length) throw new Error(`I don\'t have that many cards! This deck has ${deck.length} cards.`)
   let result = []
   let usedIndexSet = new Set()
   for (let i = 0; i < num; i++) {
