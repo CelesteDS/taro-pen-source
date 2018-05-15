@@ -1,9 +1,9 @@
 require('dotenv').config()
 const express = require('express')
-
+console.log('In app.js, about to instanciate express')
 const app = express()
 const PORT = process.env.PORT || 3000
-
+console.log(`Still in app.js, port is ${PORT}`)
 const dealCards = require('./actions/dealCards')
 const getCardsByDeck = require('./actions/getCardsByDeck')
 const getDecks = require('./actions/getDecks')
@@ -44,6 +44,7 @@ app.get('/decks', (req, res, next) => {
 })
 
 app.get('*', (req, res, next) => {
+  console.log('in default route, about to send 404')
   res.status(404).send('Sorry, that page doesn\'t exist.')
 })
 
