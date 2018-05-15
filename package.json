@@ -2,9 +2,9 @@
   "name": "tarot-api",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "nodemon src/app.js",
     "test": "mocha test --recursive --exit",
     "db:test:create": "dropdb --if-exists tarot_test; createdb tarot_test",
     "db:test:setup": "psql tarot_test < src/data/schema.sql; psql tarot_test < src/data/seed.sql"
@@ -12,6 +12,7 @@
   "author": "Celeste De Santiago",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.16.3",
     "pg-promise": "^8.4.4"
   },
   "devDependencies": {
