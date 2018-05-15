@@ -43,9 +43,16 @@ app.get('/decks', (req, res, next) => {
     .catch(err => next(err))
 })
 
+app.get('/', (req, res, next) => {
+  console.log('In home route, bout to send placeholder')
+  res.status(200).send('This is a placeholder homepage')
+
+})
+
 app.get('*', (req, res, next) => {
-  console.log('in default route, about to send 404')
-  res.status(404).send('Sorry, that page doesn\'t exist.')
+  console.log('in default route, about to send placeholder')
+  res.status(200).send('This is a placeholder homepage')
+  // res.status(404).send('Sorry, that page doesn\'t exist.')
 })
 
 app.use((err, req, res, next) => {
