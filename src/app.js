@@ -1,13 +1,15 @@
 require('dotenv').config()
 const express = require('express')
-console.log('In app.js, about to instanciate express')
+const cors = require('cors')
+
 const app = express()
 const PORT = process.env.PORT || 3000
-console.log(`Still in app.js, port is ${PORT}`)
+
 const dealCards = require('./actions/dealCards')
 const getCardsByDeck = require('./actions/getCardsByDeck')
 const getDecks = require('./actions/getDecks')
 
+app.use(cors())
 
 app.get('/deck/:deckName/deal/:numberOfCards', (req, res, next) => {
   dealCards(Number(req.params.numberOfCards), req.params.deckName)
